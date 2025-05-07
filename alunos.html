@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Alunos</h1>
+  </header>
+
+  <div class="form-container">
+    <form id="formAluno" onsubmit="cadastrarAluno(event)">
+      <input type="text" id="nome" placeholder="Nome do Aluno" required />
+      <input type="number" id="idade" placeholder="Idade" required />
+      <input type="text" id="turma" placeholder="Turma" required />
+      <button class="menu-btn" type="submit">Salvar Aluno</button>
+    </form>
+
+    <a href="index.html" class="menu-btn">Voltar ao Menu</a>
+  </div>
+
+  <script src="js/alunos.js"></script>
+</body>
+</html>
